@@ -1,4 +1,4 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,4 +39,127 @@
 
 .read-the-docs {
   color: #888;
+} */
+
+/* ================================================== */
+
+/* img {
+  height: 300px;
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+header {
+  /* background-color: red; */
+  border-bottom: solid grey 1px;
+}
+
+header img {
+  height: 100px;
+}
+
+.container {
+  /* background-color: blue; */
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* section img {
+  height: 100px;
+} */
+
+.hero-container {
+  display: flex;
+  padding: 20px 0;
+}
+
+.hero-container img {
+  width: 350px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.hero-container p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+main {
+  background-color: #f3f5f5;
+  padding-top: 20px;
+}
+
+/* main img {
+  height: 100px;
+} */
+
+.main-container {
+  display: flex;
+}
+
+.col-left {
+  /* background-color: red; */
+  width: 68%;
+}
+
+.col-right {
+  height: 200px;
+  /* background-color: blue; */
+  width: 32%;
+}
+
+article {
+  background-color: white;
+  width: 48%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  height: 170px;
+}
+
+.articles-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: red; */
+  justify-content: space-between;
+}
+
+article img {
+  height: 130px;
+  width: 130px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+article .description {
+  /* border: solid black 1px; */
+  height: 34px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.basket-square {
+  background-color: aqua;
 }
