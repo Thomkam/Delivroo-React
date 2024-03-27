@@ -22,6 +22,19 @@ function App() {
     fetchData();
   }, []);
 
+  const addToBasket = (meal) => {
+    const existingItem = basket.find((item) => item.id === meal.id);
+
+    if (existingItem) {
+      const updatedBasket = basket.map((item) =>
+        item.id === meal.id ? { ...item, quantity: item.quantity + 1 } : item
+      );
+      setBasket(updatedBasket);
+    } else {
+      setBasket([...basket, { ...meal, quantity: 1 }]);
+    }
+  };
+
   const totalPrice = () => {
     let totalPrice = 0;
     basket.map((item) => {
@@ -84,11 +97,10 @@ function App() {
                           <article
                             key={meal.id}
                             onClick={() => {
-                              const newbasket = [...basket];
+                              addToBasket(meal);
+                              /*       const newbasket = [...basket];
                               newbasket.push({ ...meal, quantity: 1 });
-                              setBasket(newbasket);
-                              /*                               console.log(meal);
-                               */
+                              setBasket(newbasket); */
                             }}
                           >
                             <div>
